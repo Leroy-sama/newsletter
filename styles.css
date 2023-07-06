@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    width: 700px;
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
+.content-area {
+    padding: 30px 30px;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.content-area p {
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.content-area img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.updates {
+    padding: 20px 0;
+}
+
+label {
+    font-size: 14px;
+}
+
+input,
+button {
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5px;
+}
+
+button {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid hsl(235, 18%, 26%);
+    border: none;
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
+.img-boks img {
+    width: 300px;
+}
+
+.form-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forming {
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.forming img {
+    width: 50px;
+    padding-bottom: 15px;
+}
+
+.forming h1 {
+    color: hsl(234, 29%, 20%);
+}
+
+.forming p {
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: hsl(234, 29%, 20%);  
+}
+
+span {
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .content-area {
+        padding: 20px ;
+    }
+
+    .img-boks {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
