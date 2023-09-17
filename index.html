@@ -21,7 +21,10 @@
                     <p><img src="assets/images/icon-list.svg">And much more!</p>
                 </div>
                 <form action="/">
-                    <label for="email">Email address</label><br>
+                    <div class="labels">
+                        <label for="email">Email address</label><br>
+                        <p class="error-text">Valid email required!</p>
+                    </div>
                     <input type="email" id="email" placeholder="email@company.com"><br>
                     <button type="submit">Subscribe to monthly newsletter</button>
                 </form>
@@ -38,7 +41,7 @@
             <img src="assets/images/icon-success.svg" alt="">
             <h1>Thanks for subscribing!</h1>
             <p>
-                A confirmation email has been sent to <span>ash@loremcompany.com</span>. 
+                A confirmation email has been sent to <span class="email"></span>. 
                 Please open it and click the button inside to confirm your subscription.
             </p>
             <button>Dismiss message</button>
