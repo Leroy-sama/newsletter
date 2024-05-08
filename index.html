@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-        <link rel="stylesheet" href="styles.css">
-        
-        <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-    </head>
-    <body>
-        <!-- Sign-up form start -->
-        <div class="content">
-            <div class="content-area">
-                <h1>Stay updated!</h1>
-                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+    <!-- Sign-up form start -->
+    <div class="container ">
+        <div class="formWrapper">
+            <div class="text">
+                <h1 class="text__heading">Stay updated!</h1>
+                <p class="text__paragraph">
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
                 <div class="updates">
-                    <p><img src="assets/images/icon-list.svg">Product discovery and building what matters</p>
-                    <p><img src="assets/images/icon-list.svg">Measuring to ensure updates are a success</p>
-                    <p><img src="assets/images/icon-list.svg">And much more!</p>
-                </div>
-                <form action="/">
-                    <div class="labels">
-                        <label for="email">Email address</label><br>
-                        <p class="error-text">Valid email required!</p>
+                    <div class="upt1">
+                        <img src="assets/images/icon-list.svg" alt="icon-list">
+                        <p class="upt__text">Product discovery and building what matters</p>
                     </div>
-                    <input type="email" id="email" placeholder="email@company.com"><br>
+                    <div class="upt2">
+                        <img src="assets/images/icon-list.svg" alt="icon-list">
+                        <p class="upt__text">Measuring to ensure updates are a success</p>
+                    </div>
+                    <div class="upt3">
+                        <img src="assets/images/icon-list.svg" alt="icon-list">
+                        <p class="upt__text">And much more!</p>
+                    </div>
+                </div>
+                <form action="#" class="form-control">
+                    <div class="label">
+                        <label for="email">Email address</label>
+                        <p class="error__text" style="display: none;">Valid email required</p>
+                    </div>                    
+                    <input type="email" id="email" placeholder="email@company.com">
                     <button type="submit">Subscribe to monthly newsletter</button>
                 </form>
             </div>
-            <div class="img-boks">
+            <div class="image">
                 <picture>
-                    <source media="(max-width: 375px)" srcset="assets/images/illustration-sign-up-mobile.svg">
-                    <img src="assets/images/illustration-sign-up-desktop.svg" >
+                    <source media="(min-width: 35em)" srcset="assets/images/illustration-sign-up-desktop.svg">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
                 </picture>
             </div>
         </div>
-        <!-- Sign-up form end -->
-        <div class="forming hide">
-            <img src="assets/images/icon-success.svg" alt="">
-            <h1>Thanks for subscribing!</h1>
-            <p>
-                A confirmation email has been sent to <span class="email"></span>. 
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="container2 hidden ">
+        <div class="success__wrapper">
+            <img src="assets/images/icon-success.svg" alt="success icon">
+            <h1 class="success__head">
+                Thanks for subscribing!
+            </h1>
+            <p class="success__text">
+                A confirmation email has been sent to <span class="input__email">ash@loremcompany.com</span>.
                 Please open it and click the button inside to confirm your subscription.
             </p>
-            <button>Dismiss message</button>
+            <div class="btn__div">
+                <button class="success__btn">Dismiss message</button>
+            </div>
         </div>
-        <script src="main.js"></script>
-    </body>
+
+    </div>
+    <!-- Success message end -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
